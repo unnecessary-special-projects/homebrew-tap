@@ -5,21 +5,21 @@
 class Ghist < Formula
   desc "Task management that lives in your repo."
   homepage "https://github.com/unnecessary-special-projects/ghist"
-  version "0.1.1"
+  version "0.1.2"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/unnecessary-special-projects/ghist/releases/download/v0.1.1/ghist_darwin_amd64.tar.gz"
-      sha256 "a661327f9afebd05539ce74aba1cb447682e6d25c4916af718b4a4d82413454a"
+      url "https://github.com/unnecessary-special-projects/ghist/releases/download/v0.1.2/ghist_darwin_amd64.tar.gz"
+      sha256 "288e05e06ef61738b6d117fb30b59338ef7db0f0902739dd8990a521845bfaed"
 
       define_method(:install) do
         bin.install "ghist"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/unnecessary-special-projects/ghist/releases/download/v0.1.1/ghist_darwin_arm64.tar.gz"
-      sha256 "384d4234990349688900df905039f230fb9ad1e26e49214c5efb60df6071e1d3"
+      url "https://github.com/unnecessary-special-projects/ghist/releases/download/v0.1.2/ghist_darwin_arm64.tar.gz"
+      sha256 "4b4ed3a6728bf3b1c104b74432aabd21990ac85ac8b8c03e0544797b2d92e184"
 
       define_method(:install) do
         bin.install "ghist"
@@ -29,15 +29,15 @@ class Ghist < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/unnecessary-special-projects/ghist/releases/download/v0.1.1/ghist_linux_amd64.tar.gz"
-      sha256 "c0d1f7a82971c159ec5f1b183863dd8100e0b688df561321691cee0606e5d88a"
+      url "https://github.com/unnecessary-special-projects/ghist/releases/download/v0.1.2/ghist_linux_amd64.tar.gz"
+      sha256 "e06a18326c458c73d329f02f6f9479d7018782e958cc681bf1f17cb07d142735"
       define_method(:install) do
         bin.install "ghist"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/unnecessary-special-projects/ghist/releases/download/v0.1.1/ghist_linux_arm64.tar.gz"
-      sha256 "a3ddb1f7903ec3daa96238df4e19946c2a27e70855a9fdc7e8dcbcbc53a709c6"
+      url "https://github.com/unnecessary-special-projects/ghist/releases/download/v0.1.2/ghist_linux_arm64.tar.gz"
+      sha256 "ad3a97e37229b44d058d13bef84fe88d92de3862d074c78ecda6bf7e1ad825c2"
       define_method(:install) do
         bin.install "ghist"
       end
